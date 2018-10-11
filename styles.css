@@ -1,0 +1,315 @@
+
+* {
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header img {
+    width: 60%; 
+    height: 10%;
+}
+
+header img#background{
+    width: 100%;
+    height: 18em;
+    margin-top: 19%;
+    background-image: url(img/boek.jpg);
+    background-size: cover;
+    z-index:-1;
+    position: absolute;
+}
+
+
+/*navigatie*/
+
+nav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: white;
+    height: 4em;
+}
+
+header nav ul{
+    display:flex;
+    justify-content:space-between;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li img{
+    width: 18%;
+    margin-top: -0.3em;
+    opacity: 0.3;   
+}
+
+nav ul li a{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    color: #00d66c;
+    float:left;
+    margin: 1em;
+    margin-top: 1em; 
+}
+
+nav ul li a:hover{
+    color:#1b1497;  
+}
+
+
+/* Bundels voor op reis */
+
+form {
+    background-color:white;
+    border-radius: 0em 0em 1.7em 1.7em;    
+}
+
+form::after {
+    content: "";
+    width: 100%;
+    height: 1.8em;
+    position: absolute;
+    bottom: 0;
+    background-color:#00d66c;
+    border: 0;
+    z-index: 2; 
+    border-radius: 0em 0em 1.25em 1.25em;
+}
+
+h1 { 
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    
+    width: 73%;
+    background-color:#00d66c;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    padding: 0.5em;
+    border-radius: 1.25em 1.25em 0em 0em;
+}
+
+label {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 80%;
+    color: #00d66c;
+    margin-left: 2em;
+    margin-top: 1em; 
+    padding: 1em;
+}
+
+input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    height: 30%;
+    border-radius: 1.25em;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 1em;
+    font-size: 80%;
+    text-align: center;
+    color: gainsboro;  
+}
+
+input::placeholder{
+    opacity:0.4; 
+}
+
+ form button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    height: 30%;
+    border-radius: 1.25em;
+    margin-left: 28%;
+    margin-right: 28%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 90%;
+    color: white;
+    background-color:#ff3268;
+    z-index: 3;
+    position: relative;
+}
+
+form button:hover {
+    font-size: 110%;
+    transition: 0.5s;
+}
+
+form { 
+    width: 73%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 9em;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 1em;     
+}
+
+fieldset {
+    border: 0;
+    width: 100%;  
+}
+
+
+/* Meest bekeken */
+
+div#gallerij{
+    display:flex;
+    overflow-y: scroll;
+}
+
+h2{ 
+    max-width: 100%;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    color: #ff3268;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-top:2em;   
+}
+
+h3 {
+    font-family: sans-serif;
+    color: #ff3268;
+    font-size: 80%;
+    text-align: center;
+    margin: 0;    
+}
+
+
+article img{
+    width: 12em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+
+/* Categorien */
+
+section#categorie button{
+    max-width: 100%;
+    width: 100%;
+    height: 2em;
+    background-color: bisque;
+    margin-top: 1.5%;
+    
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color:#1b1497;
+    border:none;
+    margin-bottom: 2em;
+}
+
+section#categorie button:hover{
+    color:white;
+    background-color: #00d66c;   
+}
+
+/*nieuwe pagina */
+
+
+body#results h2 {
+    font-family: sans-serif;
+    color: #00d66c;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+}
+
+body#results h3 {
+    font-family: sans-serif;
+    color: #ff3268;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    margin-top: 2.5em;
+}
+
+h4 {
+    font-family: sans-serif;
+    color: #ff3268;
+    font-size: 80%;
+    text-align: center;
+    margin: 0;
+}
+
+div#resultaten article img{
+    width: 9em;
+    height: 9em;
+    margin-left: 0.2em;
+    margin-right: 0.2em; 
+    z-index: 2;
+    margin-top: 2;
+}
+
+div#resultaten {
+    display:flex;
+    overflow-y: scroll;  
+}
+
+body#results nav ul{
+    margin: 0;
+    display:flex;
+    justify-content:space-between;
+    list-style: none;
+}
+
+body#results nav ul li img{
+    width: 18%;
+    opacity: 0.3;
+    margin-top: -0.3em;
+}
+
+body#results nav ul li a{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 100%;
+    color: #00d66c;
+    float:left;
+    margin: 1em;
+    margin-top: 1em; 
+}
+
+body#results nav ul li a:hover{
+    color:#1b1497;    
+}
+
+/*  flex-wrap: row wrap;*/
+/*  justify-content:space-around;*/
+    
+    
